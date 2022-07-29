@@ -10,20 +10,20 @@ import java.util.Arrays;
 public class QuickSort {
 
     //a simple swap function
+    static <T> void swap(T[] array, int lowIndex, int pivotIndex) {
+        T tmp = array[lowIndex];
+        array[lowIndex] = array[pivotIndex];
+        array[pivotIndex] = tmp;
+    }
+
     static void swap(int[] array, int lowIndex, int pivotIndex) {
         int tmp = array[lowIndex];
         array[lowIndex] = array[pivotIndex];
         array[pivotIndex] = tmp;
     }
 
-    static void swap(char[] array, int Index, int pivotIndex) {
-        char tmp = array[Index];
-        array[Index] = array[pivotIndex];
-        array[pivotIndex] = tmp;
-    }
-
-    static void swap(String[] array, int lowIndex, int pivotIndex) {
-        String tmp = array[lowIndex];
+    static void swap(char[] array, int lowIndex, int pivotIndex) {
+        char tmp = array[lowIndex];
         array[lowIndex] = array[pivotIndex];
         array[pivotIndex] = tmp;
     }

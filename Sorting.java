@@ -5,9 +5,7 @@ public class Sorting {
     static char[] arrayChar = {' ', 'g', '-', 'b', 'g', 'A', 'a', 'c', 'G', 'Y'};
     static String[] arrayString = {"string", "str", "1", "String", "2 times", "A long string"};
 
-
     public static void main(String[] args) {
-
         System.out.println("Sorting by by QuickSort");
         System.out.println("Let's sort ascending this int array: " + Arrays.toString(array));
         QuickSort.sort(array, 0, array.length - 1, false);
